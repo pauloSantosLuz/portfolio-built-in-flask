@@ -6,7 +6,7 @@ $(function () {
         submitError: function ($form, event, errors) {
             // additional error messages or events
         },
-        submitSuccess: function ($form, event) {
+        submitSuccess: function ($form, event){ 
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
             var name = $("input#name").val();
@@ -21,7 +21,7 @@ $(function () {
             $this = $("#sendMessageButton");
             $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
             $.ajax({
-                url: "/assets/mail/contact_me.php",
+                url: "/email",                
                 type: "POST",
                 data: {
                     name: name,
