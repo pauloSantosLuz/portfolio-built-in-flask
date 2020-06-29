@@ -9,10 +9,10 @@
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="{{url_for('static', filename = 'favicon.ico')}}"/>
         <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <script src="{{url_for('static', filename = 'js/all.js')}}" crossorigin="anonymous"></script>
         <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="{{url_for('static', filename = 'css/font_google_api1.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{url_for('static', filename = 'css/font_google_api2.css')}}" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{{url_for('static', filename = 'css/styles.css')}}" rel="stylesheet" />
     </head>
@@ -140,7 +140,7 @@
                 </div>
                 <!-- About Section Button-->
                 <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/themes/freelancer/">
+                    <a class="btn btn-xl btn-outline-light" href="#">
                         <i class="fas fa-address-card curriculum-icon"></i> 
                         Veja meu curriculum
                     </a>
@@ -437,10 +437,10 @@
             </div>
         </div>
         <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <script src="{{url_for('static', filename = 'js/jquery.min.js')}}"></script>
+        <script src="{{url_for('static', filename = 'js/bootstrap.bundle.min.js')}}"></script>
         <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="{{url_for('static', filename = 'js/jquery.easing.min.js')}}"></script>
         <!-- Contact form JS-->
         <script src="{{url_for('static', filename = 'js/jqBootstrapValidation.js')}}"></script>
         <script src="{{url_for('static', filename = 'js/contact_me.js')}}"></script>
